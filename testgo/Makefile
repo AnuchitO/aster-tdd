@@ -1,0 +1,9 @@
+test:
+	go test -v ./...
+
+cover:
+	go test -cover ./...
+
+cover-html:
+	go test -coverprofile=c.out ./...
+	go tool cover -html=c.out
