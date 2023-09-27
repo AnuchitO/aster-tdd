@@ -1,0 +1,17 @@
+{
+  "include": ["**/*"],
+  "exclude": [],
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDirs": ["."],
+    "outDir": "build",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es5", "es6"],
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true
+  }
+}
