@@ -2,15 +2,17 @@ package main
 
 import "testing"
 
-func TestFizzBuzzShouldReturn1WhenInput1(t *testing.T) {
-	input := 1
+func TestFizzBuzz(t *testing.T) {
+	t.Run("should return 1 when input 1", func(t *testing.T) {
+		input := 1
 
-	got := FizzBuzz(input)
+		got := FizzBuzz(input)
 
-	want := "1"
-	if got != want {
-		t.Errorf("got %q but want %q", got, want)
-	}
+		want := "1"
+		if got != want {
+			t.Errorf("got %q but want %q", got, want)
+		}
+	})
 }
 
 func TestFizzBuzzShouldReturn2WhenInput2(t *testing.T) {
