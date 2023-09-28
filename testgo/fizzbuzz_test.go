@@ -3,16 +3,23 @@ package main
 import "testing"
 
 func TestFizzBuzz(t *testing.T) {
-	t.Run("should return 1 when input 1", func(t *testing.T) {
-		input := 1
+	cases := []struct {
+		input int
+		want  string
+		name  string
+	}{
+		{input: 1, want: "1", name: "should return 1 when input 1"},
+	}
 
-		got := FizzBuzz(input)
+	for _, c := range cases {
+		t.Run(c.name, func(t *testing.T) {
+			got := FizzBuzz(c.input)
 
-		want := "1"
-		if got != want {
-			t.Errorf("got %q but want %q", got, want)
-		}
-	})
+			if got != c.want {
+				t.Errorf("got %q but want %q", got, c.want)
+			}
+		})
+	}
 }
 
 func TestFizzBuzzShouldReturn2WhenInput2(t *testing.T) {
