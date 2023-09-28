@@ -11,6 +11,7 @@ func TestFizzBuzz(t *testing.T) {
 		{input: 1, want: "1", name: "should return 1 when input 1"},
 		{input: 2, want: "2", name: "should return 2 when input 2"},
 		{input: 3, want: "Fizz", name: "should return Fizz when input 3"},
+		{input: 4, want: "4", name: "should return 4 when input 4"},
 	}
 
 	for _, c := range cases {
