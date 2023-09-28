@@ -9,6 +9,8 @@ func TestFizzBuzz(t *testing.T) {
 		name  string
 	}{
 		{input: 1, want: "1", name: "should return 1 when input 1"},
+		{input: 2, want: "2", name: "should return 2 when input 2"},
+		{input: 3, want: "Fizz", name: "should return Fizz when input 3"},
 	}
 
 	for _, c := range cases {
@@ -19,27 +21,5 @@ func TestFizzBuzz(t *testing.T) {
 				t.Errorf("got %q but want %q", got, c.want)
 			}
 		})
-	}
-}
-
-func TestFizzBuzzShouldReturn2WhenInput2(t *testing.T) {
-	input := 2
-
-	got := FizzBuzz(input)
-
-	want := "2"
-	if got != want {
-		t.Errorf("got %q but want %q", got, want)
-	}
-}
-
-func TestFizzBuzzShouldReturnFizzWhenInput3(t *testing.T) {
-	input := 3
-
-	got := FizzBuzz(input)
-
-	want := "Fizz"
-	if got != want {
-		t.Errorf("got %q but want %q", got, want)
 	}
 }
