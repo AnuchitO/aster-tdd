@@ -1,0 +1,4 @@
+EndTimestamp,InstanceID,Region,AssetClass,InstanceIDField,InstanceType,MarketPriceHourly,Version
+2023-07-24 16:00:00 UTC,anuchito-1,us-east-1,node,metadata.labels.instance-group,c5.4xlarge,0.2591,
+2023-07-24 16:00:00 UTC,aorjoa-1,us-east-1,node,metadata.labels.instance-group,c5.4xlarge,0.60000,
+2023-07-24 16:00:00 UTC,aorjoa-1,ap-southeast-1,node,metadata.labels.instance-group,c5.4xlarge,0.90000,
